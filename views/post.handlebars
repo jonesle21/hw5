@@ -1,0 +1,26 @@
+<h1>Post Request Received</h1>
+<table>
+    <tr>
+        <th>Names</th>
+        <th>Values</th>
+    </tr>
+    {{#each urlItem}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
+<br/>
+<table>
+    <tr>
+        <th>Names</th>
+        <th>Values</th>
+    </tr>
+    {{#each JSONItem}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
