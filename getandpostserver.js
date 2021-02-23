@@ -5,7 +5,7 @@ var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3000);
+app.set('port', 12193);
 
 app.get('/HW5',function(req,res){
     var info = [];
