@@ -14,25 +14,25 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/hw5', function(req,res){
-  var qParams = [];
+  var params = [];
   for (var p in req.body){
-    qParams.push({'name':p,'value':req.body[p]})
+    params.push({'name':p,'value':req.body[p]})
   }
-  console.log(qParams);
+  console.log(params);
   console.log(req.body);
   var context = {};
-  context.dataList = qParams;
+  context.urlitem = params;
   res.render('post', context);
 });
 
 //get request
 app.get('/hw5', function(req,res){
-    var qParams = [];
+    var params = [];
     for (var p in req.query){
-        qParams.push({'name':p, 'value':req.query[p]})
+        params.push({'name':p, 'value':req.query[p]})
     }
     var context = {};
-    context.dataList = qParams;
+    context.urlitem = params;
     res.render('get', context)
 });
 
