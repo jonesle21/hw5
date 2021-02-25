@@ -21,7 +21,7 @@ app.post('/hw5', function(req,res){
   console.log(params);
   console.log(req.body);
   var context = {};
-  context.urlitem = params;
+  context.urlItem = params;
   res.render('post', context);
 });
 
@@ -32,7 +32,7 @@ app.get('/hw5', function(req,res){
         params.push({'name':p, 'value':req.query[p]})
     }
     var context = {};
-    context.urlitem = params;
+    context.urlItem = params;
     res.render('get', context)
 });
 
