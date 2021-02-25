@@ -1,12 +1,12 @@
 {
-  "name": "hello-world",
+  "name": "HW5",
   "version": "1.0.0",
-  "description": "Hello world with express and node.js",
+  "description": "HW5 get and post",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "OSU",
+  "author": "Laura Jones",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
